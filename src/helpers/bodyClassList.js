@@ -5,7 +5,7 @@ export function add (bodyClass) {
   bodyClass
     .split(' ')
     .map(refCount.add)
-    .forEach(className => document.body.classList.add(className));
+    .forEach(className => document.body.className += ' ' + className);
 }
 
 export function remove (bodyClass) {
